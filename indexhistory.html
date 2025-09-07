@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All About Football</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            min-height: 100vh;
+        }
+
+        .card {
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-title {
+            border-left: 5px solid #38ef7d;
+            padding-left: 12px;
+            margin-top: 2rem;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .img-fluid {
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .quote {
+            font-style: italic;
+            background: #e9f7ef;
+            border-left: 5px solid #11998e;
+            padding: 1rem;
+            margin: 2rem 0;
+        }
+
+        .nav-link {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Football World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab"
+                            onclick="scrollToSection('home')">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
+                            onclick="scrollToSection('history')">History</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
+                            onclick="scrollToSection('competitions')">Competitions</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
+                            onclick="scrollToSection('players')">Players</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <div class="card shadow-lg">
+            <div class="card-header text-white text-center py-4" id="home">
+                <h1 class="mb-0 display-4">All About Football</h1>
+                <p class="lead mb-0">The Beautiful Game That Unites the World</p>
+            </div>
+            <div class="card-body px-4">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+                    alt="Football action" class="img-fluid mb-4 w-100">
+                <h2 class="section-title">Introduction</h2>
+                <p>
+                    Football, known as soccer in some regions, is more than just a sport—it's a global phenomenon. With
+                    over 4 billion fans worldwide, football is played in every corner of the planet, transcending
+                    language, culture, and borders. Its simplicity, excitement, and unpredictability make it accessible
+                    and thrilling for all ages.
+                </p>
+                <div class="quote">
+                    "Football is not just a game, it's an emotion that brings people together."
+                </div>
+                <h2 class="section-title" id="history">History</h2>
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=900&q=80"
+                    alt="Old football match" class="img-fluid mb-4 w-100">
+                <h3 class="mb-3">Origins of Football</h3>
+                <p>
+                    Football's origins date back to ancient civilizations, with early forms played in China, Greece, and
+                    Rome. The modern game began in England in the 19th century, where standardized rules were
+                    established.
+                </p>
+                <h3 class="mb-3">Development and Growth</h3>
+                <p>
+                    The Football Association was founded in 1863, marking the official start of organized football. The
+                    sport quickly spread across Europe and the world, leading to the creation of international
+                    competitions.
+                </p>
+                <h3 class="mb-3">Key Milestones</h3>
+                <ul>
+                    <li>First international match: Scotland vs. England, 1872</li>
+                    <li>FIFA founded in 1904</li>
+                    <li>First FIFA World Cup: 1930, Uruguay</li>
+                    <li>Expansion to global popularity in the 20th century</li>
+                </ul>
+                <h2 class="section-title" id="competitions">Major Competitions</h2>
+                <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=900&q=80"
+                    alt="Football stadium" class="img-fluid mb-4 w-100">
+                <p>
+                    Football boasts some of the most exciting and prestigious competitions in sports:
+                </p>
+                <ul class="feature-list">
+                    <li><strong>FIFA World Cup:</strong> The ultimate international tournament, held every four years.
+                    </li>
+                    <li><strong>UEFA Champions League:</strong> Europe's top club competition, featuring the best teams.
+                    </li>
+                    <li><strong>Domestic Leagues:</strong> English Premier League, La Liga, Serie A, Bundesliga, and
+                        more.</li>
+                    <li><strong>Continental Cups:</strong> Copa Libertadores, AFC Champions League, CAF Champions
+                        League.</li>
+                </ul>
+                <h2 class="section-title" id="players">Legendary Players</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Pele_-_1970_World_Cup.jpg"
+                                class="card-img-top" alt="Pele">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelé</h5>
+                                <p class="card-text">Brazilian legend, three-time World Cup winner, and one of the
+                                    greatest goal scorers in history.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Diego_Maradona_1986.jpg"
+                                class="card-img-top" alt="Lionel Messi">
+                            <div class="card-body">
+                                <h5 class="card-title">Lionel Messi</h5>
+                                <p class="card-text">Argentinian maestro, renowned for his dribbling, vision, and
+                                    record-breaking achievements with FC Barcelona and the national team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Cristiano_Ronaldo_2018.jpg"
+                                class="card-img-top" alt="Cristiano Ronaldo">
+                            <div class="card-body">
+                                <h5 class="card-title">Cristiano Ronaldo</h5>
+                                <p class="card-text">Portuguese superstar, multiple Ballon d'Or winner, and
+                                    record-breaking goal scorer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-4">Other Notable Players</h3>
+                <ul>
+                    <li>Diego Maradona</li>
+                    <li>Zinedine Zidane</li>
+                    <li>Ronaldinho</li>
+                    <li>Johan Cruyff</li>
+                    <li>Franz Beckenbauer</li>
+                </ul>
+                <h2 class="section-title">Impact on Society</h2>
+                <img src="https://images.unsplash.com/photo-1505843277359-5124b3a3d3b0?auto=format&fit=crop&w=900&q=80"
+                    alt="Football fans celebrating" class="img-fluid mb-4 w-100">
+                <p>
+                    Football is more than a game—it's a force for social change. It promotes teamwork, discipline, and
+                    respect. Major tournaments foster national pride and unity. Football charities and foundations use
+                    the sport to support education, health, and community development worldwide.
+                </p>
+                <p>
+                    The sport also breaks down barriers, bringing together people of different backgrounds, beliefs, and
+                    cultures. Stadiums and streets alike become places of celebration, hope, and shared dreams.
+                </p>
+                <h2 class="section-title">Conclusion</h2>
+                <img src="https://images.unsplash.com/photo-1465847895317-957c832b8f37?auto=format&fit=crop&w=900&q=80"
+                    alt="Football sunset" class="img-fluid mb-4 w-100">
+                <p>
+                    Football continues to inspire and unite people worldwide. Whether played professionally or for fun,
+                    its impact on culture and society is undeniable. The beautiful game will always have a special place
+                    in the hearts of millions, reminding us that, on the pitch, anything is possible.
+                </p>
+            </div>
+            <div class="card-footer text-muted text-end py-3">
+                &copy; 2025 Football Enthusiast
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">Follow us on
+                <a href="#" class="text-success text-decoration-none">Instagram</a>,
+                <a href="#" class="text-success text-decoration-none">Twitter</a>,
+                <a href="#" class="text-success text-decoration-none">Facebook</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+    <script src=
